@@ -1,16 +1,16 @@
-import { Grid } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
 
 const Testimonials = () => {
   const classes = useStyles();
   return (
-    // <Grid container>
     <div className={classes.testimonial}>
-      <div className={classes.testimonial__content}>
+     <Container>
+     <div className={classes.testimonial__content}>
         <h1>Testimonials</h1>
         <Grid container>
-          <div className={classes.testimonial__text}>
+        <div className={classes.testimonial__text}>
             <article>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy
@@ -29,8 +29,8 @@ const Testimonials = () => {
           </div>
         </Grid>
       </div>
+     </Container>
     </div>
-    // </Grid>
   );
 };
 

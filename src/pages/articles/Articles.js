@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import React from "react";
 import CardDetail from "../../components/CardDetail";
 import useStyles from "./styles";
@@ -31,15 +31,17 @@ const Articles = () => {
   const classes = useStyles();
   return (
     <section className={classes.article}>
-      <div className={classes.article__content}>
-        <h1 className={classes.article__titles}>Latest News</h1>
+       <Container>
+           <div className={classes.article__content}>
+            <h1 className={classes.article__titles}>Latest News</h1>
 
-        <Grid container spacing={2} justify="center" alignItems="center">
-          {cardDetails.map((detail) => (
-            <CardDetail detail={detail} key={detail.id} />
-          ))}
-        </Grid>
-      </div>
+            <Grid container spacing={2} justify="center" alignItems="center">
+              {cardDetails.map((detail) => (
+                <CardDetail detail={detail} key={detail.id} />
+              ))}
+            </Grid>
+          </div>
+       </Container>
     </section>
   );
 };

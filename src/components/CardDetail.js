@@ -28,8 +28,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     maxWidth: 385,
     height: 235,
-    // margin: "39px 37px 76px 46px ",
-    // textAlign: "lef",
+    
     whiteSpace: "nowrap",
     textOverflow: "ellipsis",
     overflow: "hidden",

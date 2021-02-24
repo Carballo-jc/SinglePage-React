@@ -8,10 +8,11 @@ import SectionJoin from "./sectionJoin/SectionJoin";
 import Contact from "./contacts/Contact";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import { Container } from "@material-ui/core";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Header />
       <About />
       <Feature />
@@ -20,7 +21,7 @@ const Layout = () => {
       <SectionJoin />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
   header__content: {
     display: "flex",
     justifyContent: "space-between",
-    padding: 40,
+    // padding: 40,
   },
   header__descriptio: {
     color: "#ffff",

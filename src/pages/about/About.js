@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import React from "react";
 import ListItem from "../../components/ListItem";
 import useStyles from "./styles";
@@ -14,6 +14,7 @@ const About = () => {
   const classes = useStyles();
   return (
     <div className={classes.about}>
+      <Container>
       <Grid container>
         <Grid item xs={12}>
           <div className={classes.about__content}>
@@ -35,6 +36,7 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
+      </Container>
     </div>
   );
 };
